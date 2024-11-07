@@ -81,7 +81,7 @@ void pwm_interrupt_handler() {
 }
 
 void pwm_task(void *p){
-    set_sys_clock_khz(176000, true); 
+    //set_sys_clock_khz(176000, true); 
     gpio_set_function(AUDIO_PIN, GPIO_FUNC_PWM);
 
     int audio_pin_slice = pwm_gpio_to_slice_num(AUDIO_PIN);
