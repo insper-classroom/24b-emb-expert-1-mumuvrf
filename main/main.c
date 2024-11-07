@@ -119,8 +119,8 @@ void pwm_task(void *p){
 }
 
 void data_init(){
-    for(int i=0; i<DATA_LENGTH; ++i){
-        audio_data[i] = 0;
+    for(int j=0; j<DATA_LENGTH; ++j){
+        audio_data[j] = 0;
     }
 }
 
